@@ -1,0 +1,11 @@
+# Ignore environment variables file
+.env
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore npm package lock files (optional, if you don't want them in version control)
+package-lock.json
