@@ -3,10 +3,10 @@ import {
   Container,
   Flex,
   HStack,
-  Link,
   Text,
   useColorMode,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { PlusSquareIcon } from "@chakra-ui/icons";
 import { IoMoon } from "react-icons/io5";
 import { LuSun } from "react-icons/lu";
@@ -29,21 +29,19 @@ const NavBar = () => {
             fontWeight={"bold"}
             textTransform={"uppercase"}
             textAlign={"center"}
-            bgGradient={"linear(to-r,cyan.400,blue.500"}
+            bgGradient="linear(to-r, cyan.400, blue.400)"
             bgClip={"text"}
           >
-            <Link to={"/"} color={"grey"}>
-              Product Store
-            </Link>
+            <Link to={"/"}>Product Store 🛒</Link>
           </Text>
 
           <HStack spacing={2} alignItems={"center"}>
             <Link to={"/create"}>
               <Button>
-                <PlusSquareIcon fontSize={20} />
+                <PlusSquareIcon fontSize={20} color={"blue.600"} />
               </Button>
             </Link>
-            <Button onClick={toggleColorMode}>
+            <Button onClick={toggleColorMode} color={"blue.600"}>
               {colorMode === "light" ? <IoMoon /> : <LuSun />}
             </Button>
           </HStack>
