@@ -1,2 +1,3 @@
-# product-inventory
-#not completed yet, will update time to time.
+### product-inventory
+Basic CRUD Operations performed using (MONGO, NODE, EXPRESS, REACT). 
+with the help of - ChakraUI and Zustand.
